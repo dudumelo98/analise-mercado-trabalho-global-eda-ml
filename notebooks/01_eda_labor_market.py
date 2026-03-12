@@ -53,7 +53,10 @@ print("1. ENTENDIMENTO DO DATASET")
 print("=" * 60)
 
 DATA_PATH = r"C:\Users\dudu\Downloads\join_database_w_definitions.xlsx"
-OUT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Ajustado para a nova estrutura de pastas: os gráficos vão para ../reports/figures/
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "reports", "figures")
+if not os.path.exists(OUT_DIR):
+    os.makedirs(OUT_DIR)
 df_raw = pd.read_excel(DATA_PATH, sheet_name="Sheet1", skiprows=3)
 df_dict = pd.read_excel(DATA_PATH, sheet_name="Sheet2")
 
