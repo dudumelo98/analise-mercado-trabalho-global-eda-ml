@@ -94,5 +94,5 @@ Os insights detalhados estão disponíveis no [Relatório Executivo](reports/rel
 
 ## 👤 Autor
 
-Desenvolvido por **[Eduardo Melo](https://github.com/dudumelo98)**
+Desenvolvido por **[DuilioMelo](https://github.com/dudumelo98)**
 
