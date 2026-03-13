@@ -95,28 +95,29 @@ Os insights detalhados estão disponíveis no [Relatório Executivo](relatórios
 ## 📊 Visualizações
 
 **Fig. 1** — Taxa de dados ausentes por variável
-![Dados Faltantes](relatórios/figures/fig01_missing_data.png)
+![Dados Faltantes] 
+
 
 **Fig. 2** — Distribuição dos principais indicadores de mercado de trabalho
-![Distribuições](relatórios/figures/fig02_distributions.png)
+![Distribuições]
 
 **Fig. 3** — Indicadores por nível de renda dos países
-![Por Renda](relatórios/figures/fig03_by_income.png)
+![Por Renda]
 
 **Fig. 4** — Evolução temporal dos indicadores entre 1970 e 2021
-![Tendências Temporais](relatórios/figures/fig04_temporal_trends.png)
+![Tendências Temporais]
 
 **Fig. 5** — Diagnóstico regional: brecha de gênero, informalidade e desemprego jovem
-![Análise Regional](relatórios/figures/fig05_regional_analysis.png)
+![Análise Regional]
 
 **Fig. 6** — Matriz de correlação de Spearman entre variáveis
-![Correlação](relatórios/figures/fig06_correlation_heatmap.png)
+![Correlação]
 
 **Fig. 7** — Participação feminina e brecha salarial F/M por grupo de renda
-![Análise de Gênero](relatórios/figures/fig07_gender_analysis.png)
+![Análise de Gênero]
 
 **Fig. 8** — Impacto da educação pós-secundária nos indicadores de trabalho
-![Educação e Trabalho](relatórios/figures/fig08_education_labor.png)
+![Educação e Trabalho]
 
 ---
 
