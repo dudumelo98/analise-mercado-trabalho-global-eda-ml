@@ -54,7 +54,7 @@ print("=" * 60)
 
 DATA_PATH = r"C:\Users\dudu\Downloads\join_database_w_definitions.xlsx"
 # Ajustado para a nova estrutura de pastas: os gráficos vão para ../reports/figures/
-OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "reports", "figures")
+OUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "relatórios", "figuras")
 if not os.path.exists(OUT_DIR):
     os.makedirs(OUT_DIR)
 df_raw = pd.read_excel(DATA_PATH, sheet_name="Sheet1", skiprows=3)
@@ -101,9 +101,9 @@ ax.axvline(50, color="red", linestyle="--", alpha=0.6, label=">50% ausente")
 ax.axvline(30, color="orange", linestyle="--", alpha=0.6, label=">30% ausente")
 ax.legend(fontsize=9)
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig01_missing_data.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig01_dados_faltantes.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig01_missing_data.png")
+print("  ✅ Gráfico salvo: fig01_dados_faltantes.png")
 
 # ── 3. ESTATÍSTICAS DESCRITIVAS 
 print("\n" + "=" * 60)
@@ -183,9 +183,9 @@ for i, (title, col) in enumerate(dist_cols):
 
 fig.suptitle("Distribuição dos Principais Indicadores de Mercado de Trabalho", fontsize=14, fontweight="bold", y=1.01)
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig02_distributions.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig02_distribuições.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig02_distributions.png")
+print("  ✅ Gráfico salvo: fig02_distribuições.png")
 
 # ── 5. ANÁLISE POR NÍVEL DE RENDA 
 print("\n" + "=" * 60)
@@ -232,9 +232,9 @@ ax_sal.set_xlabel("Nível de Renda")
 
 fig.suptitle("Indicadores do Mercado de Trabalho por Nível de Renda", fontsize=14, fontweight="bold")
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig03_by_income.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig03_por_renda.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig03_by_income.png")
+print("  ✅ Gráfico salvo: fig03_por_renda.png")
 
 for title, col in income_plots:
     g = df_all.groupby("Income Level Name")[col].median()
@@ -301,9 +301,9 @@ axes[1, 1].yaxis.set_major_formatter(mticker.FuncFormatter(lambda x, _: f"{x:.0f
 
 fig.suptitle("Evolução Temporal dos Indicadores de Mercado de Trabalho", fontsize=14, fontweight="bold")
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig04_temporal_trends.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig04_tendências_temporais.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig04_temporal_trends.png")
+print("  ✅ Gráfico salvo: fig04_tendências_temporais.png")
 
 # ── 7. ANÁLISE REGIONAL 
 print("\n" + "=" * 60)
@@ -349,9 +349,9 @@ axes[2].invert_yaxis()
 
 fig.suptitle("Diagnóstico Regional do Mercado de Trabalho", fontsize=13, fontweight="bold")
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig05_regional_analysis.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig05_análise_regional.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig05_regional_analysis.png")
+print("  ✅ Gráfico salvo: fig05_análise_regional.png")
 
 # ── 8. CORRELAÇÕES 
 print("\n" + "=" * 60)
@@ -383,9 +383,9 @@ sns.heatmap(corr_matrix, mask=mask, annot=True, fmt=".2f", cmap="RdYlBu",
 ax.set_title("Correlação de Spearman entre Indicadores de Mercado de Trabalho\n(Subamostra 'All', 1970–2021)",
              fontweight="bold", pad=15)
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig06_correlation_heatmap.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig06_heatmap_correlação.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig06_correlation_heatmap.png")
+print("  ✅ Gráfico salvo: fig06_heatmap_correlação.png")
 
 # Destaco correlações notáveis
 print("\n  Correlações Spearman notáveis (|r| > 0.35):")
@@ -436,9 +436,9 @@ axes[1].legend(fontsize=8)
 
 fig.suptitle("Dimensão de Gênero no Mercado de Trabalho", fontsize=13, fontweight="bold")
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig07_gender_analysis.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig07_análise_de_gênero.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig07_gender_analysis.png")
+print("  ✅ Gráfico salvo: fig07_análise_de_gênero.png")
 
 # ── 10. EDUCAÇÃO E MERCADO DE TRABALHO 
 print("\n" + "=" * 60)
@@ -468,9 +468,9 @@ for ax, (label, col, color) in zip(axes, pairs):
 
 fig.suptitle("Impacto da Educação Pós-Secundária nos Indicadores de Trabalho", fontsize=13, fontweight="bold")
 plt.tight_layout()
-plt.savefig(os.path.join(OUT_DIR, "fig08_education_labor.png"), bbox_inches="tight")
+plt.savefig(os.path.join(OUT_DIR, "fig08_educação_trabalho.png"), bbox_inches="tight")
 plt.close()
-print("  ✅ Gráfico salvo: fig08_education_labor.png")
+print("  ✅ Gráfico salvo: fig08_educação_trabalho.png")
 
 # ── 11. SUMÁRIO FINAL 
 print("\n" + "=" * 60)

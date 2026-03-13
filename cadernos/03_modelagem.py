@@ -1,5 +1,5 @@
 """
-03_MODELING.PY
+03_MODELAGEM.PY
 --------------
 Objetivo: Implementação de algoritmos de Machine Learning 
 (Random Forest, K-Means Clustering) para identificação 

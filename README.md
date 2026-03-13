@@ -19,15 +19,15 @@ Projeto de Análise Exploratória de Dados (EDA) e Machine Learning sobre o merc
 
 ```text
 analise-mercado-trabalho-global-eda-ml/
-├── notebooks/
-│   ├── 01_eda_labor_market.py       # Análise Exploratória Completa
-│   ├── 02_feature_engineering.py    # [Em Breve] Limpeza e Engenharia de Dados
-│   └── 03_modeling.py               # [Em Breve] Machine Learning e Modelagem
-├── reports/
-│   ├── relatorio_executivo.md       # Resumo dos principais insights
-│   └── figures/                     # Gráficos gerados pela análise
+├── cadernos/
+│   ├── 01_eda_mercado_trabalho.py       # Análise Exploratória Completa
+│   ├── 02_engenharia_de_atributos.py    # [Em Breve] Limpeza e Engenharia de Dados
+│   └── 03_modelagem.py                 # [Em Breve] Machine Learning e Modelagem
+├── relatórios/
+│   ├── relatorio_executivo.md           # Resumo dos principais insights
+│   └── figuras/                         # Gráficos gerados pela análise
 ├── .gitignore
-├── requirements.txt
+├── requisitos.txt
 └── README.md
 ```
 
@@ -45,13 +45,13 @@ cd analise-mercado-trabalho-global-eda-ml
 ### 2. Instale as dependências
 
 ```bash
-pip install -r requirements.txt
+pip install -r requisitos.txt
 ```
 
 ### 3. Execute a análise exploratória
 
 ```bash
-python notebooks/01_eda_labor_market.py
+python cadernos/01_eda_mercado_trabalho.py
 ```
 
 ---
@@ -94,30 +94,29 @@ Os insights detalhados estão disponíveis no [Relatório Executivo](relatórios
 
 ## 📊 Visualizações
 
-**Fig. 1** — Taxa de dados ausentes por variável
-![Dados Faltantes] 
+### 1. Dados Faltantes
+![Dados Faltantes](relatórios/figuras/fig01_dados_faltantes.png)
 
+### 2. Distribuições
+![Distribuições](relatórios/figuras/fig02_distribuições.png)
 
-**Fig. 2** — Distribuição dos principais indicadores de mercado de trabalho
-![Distribuições]
+### 3. Análise por Renda
+![Por Renda](relatórios/figuras/fig03_por_renda.png)
 
-**Fig. 3** — Indicadores por nível de renda dos países
-![Por Renda]
+### 4. Tendências Temporais
+![Tendências Temporais](relatórios/figuras/fig04_tendências_temporais.png)
 
-**Fig. 4** — Evolução temporal dos indicadores entre 1970 e 2021
-![Tendências Temporais]
+### 5. Análise Regional
+![Análise Regional](relatórios/figuras/fig05_análise_regional.png)
 
-**Fig. 5** — Diagnóstico regional: brecha de gênero, informalidade e desemprego jovem
-![Análise Regional]
+### 6. Correlação entre Variáveis
+![Correlação](relatórios/figuras/fig06_heatmap_correlação.png)
 
-**Fig. 6** — Matriz de correlação de Spearman entre variáveis
-![Correlação]
+### 7. Análise de Gênero
+![Análise de Gênero](relatórios/figuras/fig07_análise_de_gênero.png)
 
-**Fig. 7** — Participação feminina e brecha salarial F/M por grupo de renda
-![Análise de Gênero]
-
-**Fig. 8** — Impacto da educação pós-secundária nos indicadores de trabalho
-![Educação e Trabalho]
+### 8. Educação e Trabalho
+![Educação e Trabalho](relatórios/figuras/fig08_educação_trabalho.png)
 
 ---
 

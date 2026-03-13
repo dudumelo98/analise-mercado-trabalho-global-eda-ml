@@ -1,5 +1,5 @@
 """
-02_FEATURE_ENGINEERING.PY
+02_ENGENHARIA_DE_ATRIBUTOS.PY
 -------------------------
 Objetivo: Limpeza de dados, tratamento de outliers, 
 criação de variáveis (features) derivadas e exportação 
