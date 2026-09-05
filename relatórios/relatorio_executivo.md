@@ -1,4 +1,4 @@
-# 📊 Relatório Executivo — Análise do Mercado de Trabalho Global
+# 📊 Relatório Executivo, Análise do Mercado de Trabalho Global
 **Dataset:** I2D2 / World Bank Labor Market Database  
 **Período:** 1970 – 2021 | **Países:** 168 | **Observações:** 14.628 | **Variáveis:** 103  
 **Projeto:** Ciências de Dados
@@ -7,7 +7,7 @@
 
 ## 1. Resumo Executivo
 
-Este relatório apresenta uma análise exploratória completa do mercado de trabalho global, com base no dataset harmonizado do Banco Mundial (I2D2). A base cobre 168 países, 9 subamostras demográficas (total, gênero, faixa etária, nível educacional e zona geográfica), e mais de 50 anos de dados. Os principais achados revelam profundas desigualdades estruturais entre regiões e grupos de renda, com tendências positivas — mas desiguais — na participação feminina e na queda da informalidade.
+Este relatório apresenta uma análise exploratória completa do mercado de trabalho global, com base no dataset harmonizado do Banco Mundial (I2D2). A base cobre 168 países, 9 subamostras demográficas (total, gênero, faixa etária, nível educacional e zona geográfica), e mais de 50 anos de dados. Os principais achados revelam profundas desigualdades estruturais entre regiões e grupos de renda, com tendências positivas, mas desiguais, na participação feminina e na queda da informalidade.
 
 ---
 
@@ -35,9 +35,9 @@ Este relatório apresenta uma análise exploratória completa do mercado de trab
 
 ## 3. Qualidade dos Dados
 
-- **6 variáveis** com mais de 50% de dados ausentes — principalmente indicadores de formalidade (contrato, saúde, previdência social) e dependência etária
-- **70 variáveis** com cobertura superior a 70% — indicadores centrais bem preservados
-- **17 variáveis** sem nenhum dado ausente — variáveis de meta-dados e estrutura
+- **6 variáveis** com mais de 50% de dados ausentes, principalmente indicadores de formalidade (contrato, saúde, previdência social) e dependência etária
+- **70 variáveis** com cobertura superior a 70%, indicadores centrais bem preservados
+- **17 variáveis** sem nenhum dado ausente, variáveis de meta-dados e estrutura
 
 > ⚠️ A análise foi conduzida com a subamostra "All" (n=1.790), que representa os indicadores agregados por país/ano sem desagregação adicional.
 
@@ -48,11 +48,11 @@ Este relatório apresenta uma análise exploratória completa do mercado de trab
 ### 4.1 Participação no Mercado de Trabalho (LFPR)
 
 - A LFPR global mediana cresceu de **~61% (1970)** para **~70% (2010)**, com leve recuo após 2015
-- Países de **baixa renda** têm LFPR mais alta (77%) que os de alta renda (71%) — resultado da necessidade econômica, não de oportunidade
+- Países de **baixa renda** têm LFPR mais alta (77%) que os de alta renda (71%), resultado da necessidade econômica, não de oportunidade
 - A LFPR **feminina** saltou de 38% para 61% entre 1970 e 2010, sinalizando um dos progressos mais significativos do período
 - O recuo pós-2015 reflete envelhecimento populacional e maior taxa de inatividade voluntária em países ricos
 
-### 4.2 Brecha de Gênero — A Maior Desigualdade Estrutural
+### 4.2 Brecha de Gênero, A Maior Desigualdade Estrutural
 
 | Região | Brecha M−F na LFPR (pp) |
 |---|---|
@@ -65,10 +65,10 @@ Este relatório apresenta uma análise exploratória completa do mercado de trab
 | África Subsaariana | 10 pp |
 
 - A brecha no **Oriente Médio** é mais de 5× maior que na África Subsaariana
-- A razão salarial F/M mediana global é de **0,80** — mulheres ganham 80% do salário masculino
+- A razão salarial F/M mediana global é de **0,80**, mulheres ganham 80% do salário masculino
 - Países de renda média apresentam brechas salariais **maiores** que os de baixa renda, possivelmente porque o setor formal é mais amplo e mensurável naqueles
 
-### 4.3 Informalidade — Desafio Concentrado no Sul Global
+### 4.3 Informalidade, Desafio Concentrado no Sul Global
 
 | Região | Informalidade mediana |
 |---|---|
@@ -80,22 +80,22 @@ Este relatório apresenta uma análise exploratória completa do mercado de trab
 | Leste Asiático | 35% |
 
 - Países de **baixa renda**: 92% de informalidade mediana
-- Países de **alta renda**: 38% — inclui trabalho autônomo de alta qualidade
+- Países de **alta renda**: 38%, inclui trabalho autônomo de alta qualidade
 - Correlação negativa significativa com educação pós-secundária: **r = −0,41** (Spearman)
 - Reduzir informalidade passa, em grande medida, por ampliar acesso à educação superior
 
-### 4.4 Desemprego — O Paradoxo dos Jovens em Países Ricos
+### 4.4 Desemprego, O Paradoxo dos Jovens em Países Ricos
 
 - Taxa de desemprego jovem (15-24) é **2 a 4× maior** que a adulta em quase todas as regiões
-- Países de **baixa renda**: desemprego jovem mediano de apenas 4,7% — reflexo de mercados de trabalho com pouca proteção social, onde trabalhar é necessidade imediata
-- Países de **alta renda**: desemprego jovem de 19% — jovens aguardam posições adequadas ao investimento educacional feito
+- Países de **baixa renda**: desemprego jovem mediano de apenas 4,7%, reflexo de mercados de trabalho com pouca proteção social, onde trabalhar é necessidade imediata
+- Países de **alta renda**: desemprego jovem de 19%, jovens aguardam posições adequadas ao investimento educacional feito
 - A taxa de **NEET** (nem em emprego, nem em educação) é mais preocupante em países de baixa e média renda
 
-### 4.5 Transformação Estrutural — Saída da Agricultura
+### 4.5 Transformação Estrutural, Saída da Agricultura
 
 - Queda consistente do emprego agrícola: de ~50% global em 1970 para ~25% em 2020
 - Em países de **baixa renda**: 67% do emprego ainda está na agricultura
-- Em países de **alta renda**: apenas 4% — com amplo domínio de serviços (>70%)
+- Em países de **alta renda**: apenas 4%, com amplo domínio de serviços (>70%)
 - A velocidade dessa transição é um dos principais determinantes do desenvolvimento econômico
 
 ### 4.6 Correlações Estruturais Relevantes (Spearman)

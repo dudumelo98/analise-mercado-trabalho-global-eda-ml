@@ -1,6 +1,6 @@
 """
 
-ANÁLISE EXPLORATÓRIA DE DADOS — MERCADO DE TRABALHO GLOBAL
+ANÁLISE EXPLORATÓRIA DE DADOS, MERCADO DE TRABALHO GLOBAL
 Base: I2D2 / World Bank Labor Market Dataset
 Projeto de Ciência de Dados
 
@@ -77,7 +77,7 @@ print(f"\nSubamostra 'All' (usada para análises principais): {df_all.shape[0]:,
 
 # ── 2. ANÁLISE DE QUALIDADE DOS DADOS 
 print("\n" + "=" * 60)
-print("2. QUALIDADE DOS DADOS — VALORES AUSENTES")
+print("2. QUALIDADE DOS DADOS, VALORES AUSENTES")
 print("=" * 60)
 
 missing_pct = (df_all.isnull().sum() / len(df_all) * 100).sort_values(ascending=False)
@@ -107,7 +107,7 @@ print("  ✅ Gráfico salvo: fig01_dados_faltantes.png")
 
 # ── 3. ESTATÍSTICAS DESCRITIVAS 
 print("\n" + "=" * 60)
-print("3. ESTATÍSTICAS DESCRITIVAS — INDICADORES PRINCIPAIS")
+print("3. ESTATÍSTICAS DESCRITIVAS, INDICADORES PRINCIPAIS")
 print("=" * 60)
 
 KEY_METRICS = {
@@ -149,7 +149,7 @@ stats_df = pd.DataFrame(stats_rows)
 pd.set_option("display.float_format", "{:.4f}".format)
 print("\n", stats_df.to_string(index=False))
 
-# ── 4. DISTRIBUIÇÕES — INDICADORES CHAVE 
+# ── 4. DISTRIBUIÇÕES, INDICADORES CHAVE 
 print("\n" + "=" * 60)
 print("4. DISTRIBUIÇÕES DOS INDICADORES PRINCIPAIS")
 print("=" * 60)
@@ -217,7 +217,7 @@ for i, (title, col) in enumerate(income_plots):
     axes[i].set_xlabel("Nível de Renda")
     axes[i].tick_params(axis="x", labelsize=8)
 
-# Salary has extreme outliers — clip for visibility
+# Salary has extreme outliers, clip for visibility
 ax_sal = axes[5]
 col_sal = "Real Median Monthly Wages in USD (base 2011), PPP adjusted"
 data_sal = [df_all[df_all["Income Level Name"] == inc][col_sal].dropna().clip(0, 50) for inc in income_order]
@@ -245,7 +245,7 @@ for title, col in income_plots:
 
 # ── 6. EVOLUÇÃO TEMPORAL 
 print("\n" + "=" * 60)
-print("6. EVOLUÇÃO TEMPORAL — TENDÊNCIAS GLOBAIS")
+print("6. EVOLUÇÃO TEMPORAL, TENDÊNCIAS GLOBAIS")
 print("=" * 60)
 
 fig, axes = plt.subplots(2, 2, figsize=(14, 10))
@@ -397,7 +397,7 @@ for i in range(len(corr_matrix.columns)):
 
 # ── 9. ANÁLISE DE GÊNERO PROFUNDA 
 print("\n" + "=" * 60)
-print("9. ANÁLISE DE GÊNERO — BRECHA SALARIAL E LFPR")
+print("9. ANÁLISE DE GÊNERO, BRECHA SALARIAL E LFPR")
 print("=" * 60)
 
 fig, axes = plt.subplots(1, 2, figsize=(14, 6))
@@ -483,17 +483,17 @@ print("""
 
   2. BRECHA DE GÊNERO: A diferença de LFPR entre homens e mulheres é
      de 52 pp no Oriente Médio/N. África e 10 pp na América do Norte.
-     A tendência é de fechamento gradual — LFPR feminina passou de 38%
+     A tendência é de fechamento gradual, LFPR feminina passou de 38%
      (1970) para 61% (2010) globalmente.
 
   3. INFORMALIDADE: África Subsaariana (88%) e Sul da Ásia (85%) têm
      as maiores taxas. Países de baixa renda têm informalidade mediana
-     de 92% — vs 38% nos de alta renda. Forte correlação negativa com
+     de 92%, vs 38% nos de alta renda. Forte correlação negativa com
      educação pós-secundária (r = -0.41).
 
   4. DESEMPREGO JOVEM: 2–4× maior que o adulto em quase todas as regiões.
      Países de alta renda têm paradoxalmente maior desemprego jovem que
-     os de baixa renda — reflexo de mercados de trabalho mais formalizados
+     os de baixa renda, reflexo de mercados de trabalho mais formalizados
      onde jovens aguardam vagas adequadas.
 
   5. ESTRUTURA SETORIAL: Queda contínua do emprego agrícola e ascensão

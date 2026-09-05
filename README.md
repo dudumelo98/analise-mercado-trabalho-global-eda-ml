@@ -1,6 +1,6 @@
-# 🌍 Análise do Mercado de Trabalho Global — EDA & Machine Learning
+# 🌍 Análise do Mercado de Trabalho Global, EDA & Machine Learning
 
-**Python 3.13+** | **Banco Mundial — I2D2** | **Período: 1970–2021** | **Status: Em Desenvolvimento**
+**Python 3.13+** | **Banco Mundial, I2D2** | **Período: 1970–2021** | **Status: Em Desenvolvimento**
 
 Projeto de Análise Exploratória de Dados (EDA) e Machine Learning sobre o mercado de trabalho global, utilizando dados do **Banco Mundial (I2D2)**. O objetivo é identificar tendências de emprego, informalidade, brechas de gênero e evolução salarial entre **1970 e 2021**.
 
@@ -80,7 +80,7 @@ python cadernos/01_eda_mercado_trabalho.py
 
 ## 📄 Fonte dos Dados
 
-Os dados utilizados neste projeto são provenientes do **Banco Mundial — I2D2 (International Income Distribution Database)**, cobrindo indicadores de emprego, salário e condições de trabalho de múltiplos países entre 1970 e 2021.
+Os dados utilizados neste projeto são provenientes do **Banco Mundial, I2D2 (International Income Distribution Database)**, cobrindo indicadores de emprego, salário e condições de trabalho de múltiplos países entre 1970 e 2021.
 
 > 🔗 [World Bank Open Data](https://data.worldbank.org/)
 
